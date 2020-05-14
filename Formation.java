@@ -41,7 +41,7 @@ public class Formation {
     public String toString() {
         String test;
         test = this.code + " " + this.name + "\n";
-        test = test + " Liste des Cours : ";
+        test = test + " Liste des Cours : " + "\n";
         
         for(int i = 0; i < listeCours.size() ; i++){
             test = test + listeCours.get(i);

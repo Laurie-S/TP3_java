@@ -1,5 +1,4 @@
-
-interface Comparable{
+interface Comparable extends java.lang.Comparable{
     public int compareTo(Object obj);
 }
 
