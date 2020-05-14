@@ -1,5 +1,9 @@
 
-public class Cours {
+interface Comparable{
+    public int compareTo(Object obj);
+}
+
+public class Cours implements Comparable{
     private String code;
     private String intitule;
     private int volumeH;
@@ -29,6 +33,11 @@ public class Cours {
        return this.volumeH; 
     }
     
+    @Override
+    public int compareTo(Object obj) {
+        String intitule = ((Cours)obj).getIntitule();
+        return this.intitule.compareTo(intitule);
+    }
     
     public String toString() {
         String test;
